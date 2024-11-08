@@ -62,7 +62,7 @@ Alternatively, you can send multiple tracks in one request:
     "artist": "Jimi Hendrix"
   }
 ]
-
+```
 ### 2. Get All Tracks
 - **Endpoint**: `GET /tracks`
 - **Function**: Retrieves a list of all tracks.

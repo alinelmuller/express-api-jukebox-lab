@@ -4,12 +4,12 @@ const router = express.Router();
 
 // CREATE - POST - /Tracks
 router.post('/', async (req, res) => {
-    try {
-      const createdTrack = await Track.create(req.body);
-      res.status(201).json(createdTrack);
-    } catch (error) {
+  try {
+      const createdTracks = await Track.insertMany(req.body);
+      res.status(201).json(createdTracks);
+  } catch (error) {
       res.status(500).json({ error: error.message });
-    }
+  }
 });
 
 // READ - GET - /Tracks
